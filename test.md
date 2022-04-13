@@ -13,13 +13,42 @@
 - 분기처리: 정해진 장소로 이동하는 구조
 `break` `continue` `goto` `return`
 
+### if 문
 ```C
-if 문
-  - 조건식이 0(거짓)이 아니면 문장을 실행
-if(조건식)
-{
-  실행문장;
-}
+  조건식이 0(거짓)이 아니면 문장을 실행
+  if(조건식)
+  {
+    실행문장;
+  }
+  
+  실행문장이 한 문장이면 {} 없이 tab 으로 표현하기도 함 
+  if(조건식)
+    실행문장;
+```
+### 조건연산자(삼항연산자)
+```C
+  조건식 ? true : false ;
+  abs = x>=0 ? x : -x;
+```
+### switch 문
+```C
+  switch(exp){   -> 식의 결과는 문자형 또는 정수형이어야 한다.
+    case value1: -> 정수 또는 문자형의 상수이어야 한다. ("hello"같은 문자열 안됨)
+      stmt1;
+      break;     -> break를 만나면 switch 문이 종료된다.
+      
+    case value2:
+      stmt2;
+      break;
+      
+    case value3:
+      stmt3;
+      break;
+      
+    default:     -> 위의 case 값과 일치하지 않으면 default 문장 실행 (default는 무조건 실행) 
+      stmt4;
+      break;
+  }
 ```
 
 ## 반복
@@ -51,11 +80,11 @@ if(조건식)
 
 ### for 문
 ```C
-  for(init(초기값); cond(조건식); inc(제어 변수의 증감식))
+  for(init(초기화); cond(조건식); inc(제어 변수의 증감식))
   {
     //반복몸체(loop body);
-    
   }
+  초기화 -> [ 조건식 -> 반복몸체 -> 변수의 증감식 -> 조건식 ] -> 종료;
 ```
     break: 블럭탈출
     continue: loop 문에서 밑에 문장을 수행하지 않고 다음 loop 진행
