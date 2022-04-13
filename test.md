@@ -2,6 +2,7 @@
 
 ## C 프로그래밍 언어 개요
 ## C 프로그래밍 첫걸음
+scanf 함수를 error없이 사용하기 위해서는 #define _CRT_SECURE_NO_WARNINGS 필요
 ## 자료형과 변수
 ## 전처리와 입출력
 ## 연산자와 연산식
@@ -58,7 +59,15 @@
 - default
   - 선택적으로 사용하며, 어디에 위치해도 모든 case 처리를 하지 않은 경우 실행
   - 다른 case가 뒤에 있다면 break가 필요
-
+## random 함수
+```c
+  #include <stdlib.h> 추가
+  random = rand(); 0~32767 난수생성 
+  rand()%9 = 0~9 까지 난수생성
+  
+  #include <time.h> 추가
+  srand(time(NULL)); -> 실행마다 다른 랜덤생성 (rand() 함수에 무작위의 시드값을 준다)
+```
 ## 반복
 ```C
   순환 또는 루프(loop)라는 표현도 함께사용
