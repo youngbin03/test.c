@@ -9,8 +9,19 @@
 - 조건 선택: 두개 또는 여러개 중의 하나를 선택하는 구조
 `if` `if else` `if else if` `nested if` `switch` 
 - 반복: 반복 몸체인 여러 문장을 여러번 반복하는 구조
+`for` `while` `do while`
 - 분기처리: 정해진 장소로 이동하는 구조
-- 
+`break` `continue` `goto` `return`
+
+```C
+if 문
+  - 조건식이 0(거짓)이 아니면 문장을 실행
+if(조건식)
+{
+  실행문장;
+}
+```
+
 ## 반복
 ```C
   순환 또는 루프(loop)라는 표현도 함께사용
