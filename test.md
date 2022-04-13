@@ -60,7 +60,7 @@ scanf 함수를 error없이 사용하기 위해서는 #define _CRT_SECURE_NO_WAR
   - 선택적으로 사용하며, 어디에 위치해도 모든 case 처리를 하지 않은 경우 실행
   - 다른 case가 뒤에 있다면 break가 필요
 ## random 함수
-```c
+```C
   #include <stdlib.h> 추가
   random = rand(); 0~32767 난수생성 
   rand()%9 = 0~9 까지 난수생성
