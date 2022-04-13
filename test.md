@@ -6,6 +6,17 @@ scanf 함수를 error없이 사용하기 위해서는 #define _CRT_SECURE_NO_WAR
 ## 자료형과 변수
 ## 전처리와 입출력
 ## 연산자와 연산식
+- 연산식(expression)
+  - 변수와 다양한 리터럴 상수 그리고 함수의 호출 등으로 구성되는 표현식
+  - 현산식은 항상 하나의 결과값을 가짐
+- 연산자(operator): 이미 정의된 연산을 수행하는 문자 또는 문자조합기호 `+` `-` `*` `/`
+- 피연산자(operand): 연산에 참여하는 변수나 상수
+### 다양한 연산자
+#### 단(일)항(unary) 연산자
+- 전위: `++a`전위 증가연산자 `sizeof()`sizeof 연산자 `(int)`자료형 변환연산자 `-` 부호연산자 
+- 후위: `a--` 후위 감소연산자 `a++` 후위 증가현산자
+####  이항(binary) 연산자
+
 ## 조건
 - 조건 선택: 두개 또는 여러개 중의 하나를 선택하는 구조
 `if` `if else` `if else if` `nested if` `switch` 
@@ -59,6 +70,7 @@ scanf 함수를 error없이 사용하기 위해서는 #define _CRT_SECURE_NO_WAR
 - default
   - 선택적으로 사용하며, 어디에 위치해도 모든 case 처리를 하지 않은 경우 실행
   - 다른 case가 뒤에 있다면 break가 필요
+
 ## random 함수
 ```C
   #include <stdlib.h> 추가
