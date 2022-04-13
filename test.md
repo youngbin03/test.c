@@ -41,9 +41,9 @@
     
   }
 ```
-    #break: 블럭탈출
-    #continue: loop 문에서 밑에 문장을 수행하지 않고 다음 loop 진행
-    #continue는 자신이 속한 가장 근접한 복복에서 다음 반복을 
+    # break: 블럭탈출
+    # continue: loop 문에서 밑에 문장을 수행하지 않고 다음 loop 진행
+    # continue는 자신이 속한 가장 근접한 복복에서 다음 반복을 
  
 ### for 문과 while 문의 비교
 - for 문
