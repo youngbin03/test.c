@@ -88,7 +88,8 @@ scanf 함수를 error없이 사용하기 위해서는 #define _CRT_SECURE_NO_WAR
 - 함수 getchar()는 인자없이 함수를 호출하며 입력된 문자 값을 자료형 char나 정수형으로 선언된 변수에 저장할 수 있다.
 - char ch = getchar();
 - int ch getchar();
-- putchar(문자)
+- putchar(문자) -> 문자전용 출력함수
+- puts() -> 문자열 전용 
 ## 연산자와 연산식
 - 연산식(expression)
   - 변수와 다양한 리터럴 상수 그리고 함수의 호출 등으로 구성되는 표현식
