@@ -23,7 +23,7 @@ scanf 함수를 error없이 사용하기 위해서는 #define _CRT_SECURE_NO_WAR
 | signed short | 2바이트 = 16비트| -2^15 ~ 2^15-1 |
 | signed int | 4바이트 | -2^31 ~ 2^31-1 |
 | signed long | 4바이트 | -2^31 ~ 2^31-1 |
-| unsigned char | 2바이트 | 0 ~ 2^16-1 |
+| unsigned short | 2바이트 | 0 ~ 2^16-1 |
 | signed long long int | 8바이트 | -2^63 ~ 2^63-1 |
 
 - 부호가 있는 signed 정수에서 저장 공간의 최상위 비트(MSB)는 부호를 나타낸느 역할을 한다.
@@ -64,12 +64,15 @@ scanf 함수를 error없이 사용하기 위해서는 #define _CRT_SECURE_NO_WAR
 -헤더파일: 전처리 지시자 문장이 있는 텍스트 파일이다.
 #### scanf()
 - #define _CRT_SECURE_NO_WARNINGS 추가해야 에러안난다.
+- #define _CRT_SECURE_NO_DEPRECATE
 - 형식지정자로 값을 입력받은 뒤 [Enter]키를 누르면 프로그램이 실행된다.
 - 형식 문자열안에 형식지정자 사이에 구분자(sepatator)로 여러개의 문자를 입력받을 수 있다.
+- 반환값은 입력된 문자의 개수이다. printf()는 출력되는 문자 개수 (이스케이프 포함)
 
 | 형식지정자 | 콘솔 입력 값의 형태 | 입력 변수 인자 유형 |
-|---|:---:|---:|
+|---|:---:|:---|
 | %d | 10진수로 인식 | 정수형 int 변수에 입력 값 저장 |
+| %lld | 10진수로 인식 | 정수형 long long int 변수에 입력 값 저장 |
 | %i | 10진수로 인식(단, 입력 값에 0이 앞에 붙으면 8진수, 0x가 붙으면 16진수로 인식하여 저장) | 정수형 int 변수에 입력 값 저장 |
 | %u | unsigned int로 인식 | 정수형 unsigned int 변수에 입력 값 저장 |
 | %0 | 8진수로 인식 | 정수형 int 변수에 입력 값 저장 |
@@ -81,6 +84,11 @@ scanf 함수를 error없이 사용하기 위해서는 #define _CRT_SECURE_NO_WAR
 | %s | 일련의 문자인 문자열(string)로 인식 | 문자열을 저장할 배열에 입력 값 저장 |
 | %p | 주소(address) 값으로 인식 | 정수형 unsigned int 변수에 입력 값 저장 |
 
+#### getchar(), putchar()
+- 함수 getchar()는 인자없이 함수를 호출하며 입력된 문자 값을 자료형 char나 정수형으로 선언된 변수에 저장할 수 있다.
+- char ch = getchar();
+- int ch getchar();
+- putchar(문자)
 ## 연산자와 연산식
 - 연산식(expression)
   - 변수와 다양한 리터럴 상수 그리고 함수의 호출 등으로 구성되는 표현식
