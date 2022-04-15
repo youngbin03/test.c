@@ -210,7 +210,7 @@ scanf 함수를 error없이 사용하기 위해서는 #define _CRT_SECURE_NO_WAR
       stmt3;
       break;
       
-    default:     -> 위의 case 값과 일치하지 않으면 default 문장 실행 (default는 무조건 실행) 
+    default:     -> 위의 case 값과 일치하지 않으면 default 문장 실행 
       stmt4;
       break;
   }
